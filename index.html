@@ -7,10 +7,34 @@
     <title>Medica - The Med Connection</title>
     <!-- Link Minified Css File -->
     <link rel="stylesheet" href="./css/style.min.css" />
+
+    <!-- Box Icons CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Welcome Saurav Verma</h1>
-    <button class="btn">Cick mE</button>
-    <button class="btn-primary">Cick mE</button>
+    <nav>
+      <div class="container">
+        <a href="#" class="nav__logo">
+          <h3>MED<span>ICA</span></h3>
+        </a>
+
+        <ul id="nav__items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#specialists">Specialists</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#appointments" class="btn">Make appointments</a></li>
+        </ul>
+
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!-- ====================================== END OF NAV ======================================= -->
+
+    <script src="./script.js"></script>
   </body>
 </html>

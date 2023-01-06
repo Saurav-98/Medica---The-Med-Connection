@@ -11,7 +11,7 @@
   box-shadow: 0 15px 20px rgba($dark-color, $alpha: 0.2);
 
   &:hover {
-    background: lighten($bckClr, 15%);
+    background: lighten($bckClr, 10%);
     // color: darken($txtClr, 70%);
     box-shadow: 0 10px 10px rgba($dark-color, $alpha: 0.4);
     transform: translateY(-2px);
@@ -19,5 +19,22 @@
   &:active {
     box-shadow: 0 5px 5px rgba($dark-color, $alpha: 0.6);
     transform: translateY(-1px);
+  }
+}
+
+@mixin gradientsBackground {
+  background: linear-gradient(
+    to right bottom,
+    $primary-color,
+    $primary-variant
+  );
+  color: $white-color;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $white-color;
   }
 }
