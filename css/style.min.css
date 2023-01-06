@@ -27,7 +27,8 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 h1,
@@ -214,5 +215,137 @@ nav .container a {
   }
   nav .container button#close__nav-btn {
     display: none;
+  }
+}
+header {
+  background: linear-gradient(to right bottom, #480ca8, #4cc9f0);
+  color: #fff;
+  height: 100vh;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+}
+header h1,
+header h2,
+header h3,
+header h4,
+header h5 {
+  color: #fff;
+}
+header .container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header__content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: lighter;
+  letter-spacing: -2px;
+}
+header .container .header__content p {
+  line-height: 1.4;
+  margin: 1rem 0 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+}
+/* ---------------------------- MEDIA QUERIES ( MEDIUM DEVICES ) -----------------------------------*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: 80vh;
+  }
+  header .container .header__content h1 {
+    font-size: 2.2rem;
+  }
+  header .container .header__content p {
+    font-size: 1rem;
+  }
+}
+/* ---------------------------- MEDIA QUERIES ( SMALL DEVICES ) -----------------------------------*/
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+    padding-top: 2rem;
+  }
+  header .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0;
+  }
+  header .container .header__content {
+    line-height: 1.3;
+    margin: 0.8rem 0 1.4rem;
+  }
+  header .container .header__content h1 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    letter-spacing: normal;
+  }
+  header .container .header__content p {
+    font-size: 0.9rem;
+  }
+}
+#services {
+  padding-bottom: 3rem;
+}
+#services .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+#services .container article {
+  background: linear-gradient(to right bottom, #480ca8, #4cc9f0);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  height: fit-content;
+  transition: all 400ms ease;
+}
+#services .container article h1,
+#services .container article h2,
+#services .container article h3,
+#services .container article h4,
+#services .container article h5 {
+  color: #fff;
+}
+#services .container article:hover {
+  margin-top: -0.5rem;
+}
+#services .container article i {
+  font-size: 1.7rem;
+}
+#services .container article div h4 {
+  margin-bottom: 1rem;
+}
+#services .container article div small {
+  line-height: 1;
+}
+
+/* ---------------------------- MEDIA QUERIES ( MEDIUM DEVICES ) -----------------------------------*/
+@media screen and (max-width: 1024px) {
+  #services .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  #services .container article {
+    padding: 1.2rem;
+    gap: 0.8rem;
+  }
+  #services .container article:hover {
+    margin: 0;
+  }
+}
+/* ---------------------------- MEDIA QUERIES ( SMALL DEVICES ) -----------------------------------*/
+@media screen and (max-width: 600px) {
+  #services .container {
+    grid-template-columns: 1fr;
+  }
+  #services .container article div h4 {
+    margin-bottom: 0.8rem;
   }
 }/*# sourceMappingURL=style.min.css.map */
