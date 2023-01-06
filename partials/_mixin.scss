@@ -1,0 +1,23 @@
+@mixin button($txtClr: $white-color, $bckClr: $secondary-color) {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  background: $bckClr;
+  color: $txtClr;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 20px rgba($dark-color, $alpha: 0.2);
+
+  &:hover {
+    background: lighten($bckClr, 15%);
+    // color: darken($txtClr, 70%);
+    box-shadow: 0 10px 10px rgba($dark-color, $alpha: 0.4);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 5px 5px rgba($dark-color, $alpha: 0.6);
+    transform: translateY(-1px);
+  }
+}
