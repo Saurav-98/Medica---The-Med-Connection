@@ -454,4 +454,107 @@ header .container .header__content p {
   #specialists .container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.swiper.mySwiper {
+  width: 82%;
+  padding-bottom: 4rem;
+}
+.swiper.mySwiper .swiper-wrapper .swiper-slide {
+  background: linear-gradient(to right bottom, #480ca8, #4cc9f0);
+  color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.swiper.mySwiper .swiper-wrapper .swiper-slide h1,
+.swiper.mySwiper .swiper-wrapper .swiper-slide h2,
+.swiper.mySwiper .swiper-wrapper .swiper-slide h3,
+.swiper.mySwiper .swiper-wrapper .swiper-slide h4,
+.swiper.mySwiper .swiper-wrapper .swiper-slide h5 {
+  color: #fff;
+}
+.swiper.mySwiper .swiper-wrapper .swiper-slide p {
+  margin-bottom: 1.5rem;
+}
+.swiper.mySwiper .swiper-wrapper .swiper-slide .patient {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.swiper.mySwiper .swiper-wrapper .swiper-slide .patient .avatar {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* ---------------------------- MEDIA QUERIES ( SMALL DEVICES ) -----------------------------------*/
+@media screen and (max-width: 600px) {
+  .swiper.mySwiper .swiper-wrapper .swiper-slide {
+    padding: 1.5rem;
+  }
+}
+#appointment {
+  padding-bottom: 4rem;
+}
+#appointment .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6%;
+}
+#appointment .container .info p {
+  margin: 0.5rem 0 2rem;
+}
+#appointment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info article small {
+  display: block;
+  margin-top: 0.6rem;
+}
+#appointment .container .info article .info__icon {
+  background: #f72585;
+  color: #fff;
+  padding: 0.8rem;
+  height: fit-content;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.2rem;
+}
+#appointment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form__group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form__group input,
+#appointment .container form .form__group textarea,
+#appointment .container form .form__group select {
+  width: 100%;
+  background: #fff;
+  padding: 0.8rem 1rem;
+  display: block;
+  border-radius: 0.4rem;
+  resize: none;
+  appearance: none;
+}
+
+/* ---------------------------- MEDIA QUERIES ( SMALL DEVICES ) -----------------------------------*/
+@media screen and (max-width: 600px) {
+  #appointment .container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  #appointment .container .info p,
+#appointment .container .info h2 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.min.css.map */

@@ -4,6 +4,7 @@ nav {
   height: 5rem;
   // background-color: aqua;
   @include gradientsBackground;
+  // background: $primary-variant;
   z-index: 10;
   display: grid;
   place-items: center;
