@@ -24,6 +24,20 @@ footer {
       flex-direction: column;
       gap: 1rem;
 
+      #footer-logo.footer__logo {
+        color: $white-color;
+        width: fit-content;
+        border-bottom: 2px solid $secondary-color;
+        h4 {
+          font-size: 1.6rem;
+          font-weight: 700;
+          span {
+            font-weight: 300;
+            font-size: 1.8rem;
+          }
+        }
+      }
+
       & > div {
         display: flex;
         align-items: center;

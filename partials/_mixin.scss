@@ -38,3 +38,19 @@
     color: $white-color;
   }
 }
+@mixin gradientsBackground2 {
+  background: linear-gradient(
+    to right bottom,
+    $tertiary-color,
+    $tertiary-variant
+  );
+  color: $tertiary-accent;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $tertiary-accent;
+  }
+}
