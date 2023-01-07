@@ -20,7 +20,7 @@ closeNav.addEventListener('click', closeNavFn);
 //  Close Nav Menu When Any Link is clicked
 
 if (window.innerWidth < 1024) {
-  document.querySelectorAll('#nav__items li a').forEach((navItem) => {
+  document.querySelectorAll('#nav__items>li>a').forEach((navItem) => {
     navItem.addEventListener('click', () => {
       closeNavFn();
     });

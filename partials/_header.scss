@@ -16,7 +16,7 @@ header {
 
     .header__content {
       h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 1.1;
         font-weight: lighter;
         letter-spacing: -2px;
@@ -25,13 +25,7 @@ header {
         line-height: 1.4;
         margin: 1rem 0 2rem;
         color: $light-color;
-        font-size: 1.2rem;
-      }
-    }
-
-    .header__image {
-      img {
-        // height: 50%;
+        font-size: 1rem;
       }
     }
   }

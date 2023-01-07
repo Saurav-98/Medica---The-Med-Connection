@@ -23,9 +23,9 @@ nav {
   width: 100vw;
   position: fixed;
   height: 5rem;
-  // background-color: aqua;
+
   @include gradientsBackground;
-  // background: $primary-variant;
+
   z-index: 10;
   display: grid;
   place-items: center;
@@ -33,7 +33,7 @@ nav {
 
   .container {
     position: relative;
-    // background-color: palevioletred;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,17 +55,31 @@ nav {
 
       gap: 3rem;
       align-items: center;
+      li {
+        a {
+          color: $white-color;
+          font-weight: 400;
+          font-size: 0.9rem;
+
+          cursor: pointer;
+
+          transition: all 400ms ease;
+
+          &:hover {
+            color: $secondary-color;
+          }
+          &.btn {
+            &:hover {
+              color: $white-color;
+            }
+          }
+        }
+      }
     }
 
     // Only Need Buttons on Medium and Small Devices
     button {
       display: none;
-    }
-
-    a {
-      color: $white-color;
-      font-weight: 400;
-      font-size: 0.9rem;
     }
   }
 }
