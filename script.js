@@ -17,6 +17,16 @@ openNav.addEventListener('click', openNavFn);
 
 closeNav.addEventListener('click', closeNavFn);
 
+//  Close Nav Menu When Any Link is clicked
+
+if (window.innerWidth < 1024) {
+  document.querySelectorAll('#nav__items li a').forEach((navItem) => {
+    navItem.addEventListener('click', () => {
+      closeNavFn();
+    });
+  });
+}
+
 // Swiper JS
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
@@ -38,4 +48,12 @@ var swiper = new Swiper('.mySwiper', {
       slidesPerView: 3,
     },
   },
+});
+
+// Nav Scroll Behaviour
+
+window.addEventListener('scroll', () => {
+  document
+    .querySelector('nav')
+    .classList.toggle('window-scroll', window.scrollY > 0);
 });

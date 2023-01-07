@@ -1,4 +1,25 @@
 nav {
+  // Scroll Behavious
+  &.window-scroll {
+    background: $white-color;
+    .container {
+      button {
+        color: $black-color;
+      }
+      a {
+        color: $black-color;
+        &.btn {
+          color: $white-color;
+        }
+      }
+      .nav__logo {
+        h3 {
+          color: $black-color;
+        }
+      }
+    }
+  }
+
   width: 100vw;
   position: fixed;
   height: 5rem;
@@ -53,6 +74,16 @@ nav {
 
 @media screen and (max-width: 1024px) {
   nav {
+    // Scoll Styles
+
+    &.window-scroll {
+      .container {
+        a {
+          color: $white-color;
+        }
+      }
+    }
+
     .container {
       ul {
         flex-direction: column;
